@@ -4,5 +4,5 @@ import { defineConfig } from "astro/config";
 
 export default defineConfig({
   integrations: [tailwind(), react()],
-  site: 'https://Naritsumi.github.io/web-EstudiaTAI/',
+  site: 'https://Naritsumi.github.io/EstudiaTAI/',
 });
