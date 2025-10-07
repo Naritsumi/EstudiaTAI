@@ -16,8 +16,17 @@ jobs:
     steps:
       - name: Checkout your repository
         uses: actions/checkout@v4
+
       - name: Install, build, and upload site
         uses: withastro/action@v3
+        with:
+          node-version: 20
+          package-manager: npm
+          path: ./
+          build-dir: dist
+
+      - name: Disable Jekyll
+        run: touch dist/.nojekyll
 
   deploy:
     needs: build
