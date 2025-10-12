@@ -1,6 +1,10 @@
 import type { AppHeroProps, StoreButtonProps } from "config";
 import { memo } from "react";
-import { FaApple, FaGooglePlay } from "react-icons/fa";
+import fdroidIcon from '../../../public/icons/fdroid.webp';
+import coffeeIcon from '../../../public/icons/coffee-logo.webp';
+import kofiIcon from '../../../public/icons/kofi-logo.webp';
+import faDownload from '../../../public/icons/flecha-hacia-abajo.png'
+
 
 const AppHero = ({ title, description, storeLinks, logo }: AppHeroProps) => (
 	<div className="mb-16 flex flex-col items-center md:items-start md:flex-row gap-8">
@@ -17,32 +21,40 @@ const AppHero = ({ title, description, storeLinks, logo }: AppHeroProps) => (
 			</div>
 
 			<div className="flex flex-wrap gap-4 justify-center md:justify-start">
-				<StoreButton store="apple" href={storeLinks.apple} label="Download on the" storeName="App Store" />
-				<StoreButton store="google" href={storeLinks.google} label="Get it on" storeName="Google Play" />
+				
+				<StoreButton store="coffe" href={storeLinks.coffe} label="Invítanos a" storeName=" Un café!" />
+				<StoreButton store="kofi" href={storeLinks.kofi} label="Apóyanos en" storeName=" Ko-fi" />
+				<StoreButton store="fdroid" href={storeLinks.fdroid} label="Descargala en " storeName="F-droid" />
+                <StoreButton store="direct" href={storeLinks.direct} label="Descarga " storeName="Directa" />
 			</div>
 		</div>
 	</div>
 );
 
 const StoreButton = memo(({ store, href, label, storeName }: StoreButtonProps) => {
-	const Icon = store === "apple" ? FaApple : FaGooglePlay;
+    // Selecciona la imagen correcta según el store
+    const iconSrc = store === "fdroid" ? fdroidIcon : store === "coffe" ? coffeeIcon : store === "kofi" ? kofiIcon : faDownload ;
 
-	return (
-		<a
-			href={href}
-			target="_blank"
-			rel="noopener noreferrer"
-			className="group flex items-center gap-3 rounded-xl border border-gray-300 dark:border-white/10 bg-white dark:bg-white/[0.04] px-5 py-3 transition-all duration-300 hover:bg-gray-50 dark:hover:bg-white/[0.08] hover:border-gray-400 dark:hover:border-white/20 shadow-sm"
-		>
-			<div className="flex items-center justify-center w-7 h-7">
-				<Icon className={`text-gray-600 dark:text-gray-300 transition-transform duration-300 group-hover:scale-110 group-hover:text-gray-800 dark:group-hover:text-white ${store === "apple" ? "w-[22px] h-[22px]" : "w-5 h-5"}`} />
-			</div>
-			<span className="text-left">
-				<div className="text-[11px] font-medium text-gray-500 dark:text-gray-400 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors">{label}</div>
-				<div className="text-[13px] font-semibold tracking-wide text-gray-900 dark:text-white/90 group-hover:text-gray-900 dark:group-hover:text-white transition-colors">{storeName}</div>
-			</span>
-		</a>
-	);
+    return (
+        <a
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex items-center gap-3 rounded-xl border border-gray-300 dark:border-white/10 bg-white dark:bg-white/[0.04] px-5 py-3 transition-all duration-300 hover:bg-gray-50 dark:hover:bg-white/[0.08] hover:border-gray-400 dark:hover:border-white/20 shadow-sm"
+        >
+            <div className="flex items-center justify-center w-7 h-7">
+                <img 
+                    src={iconSrc.src} 
+                    alt={`${storeName} icon`}
+                    className={`text-gray-600 dark:text-gray-300 transition-transform duration-300 group-hover:scale-110 group-hover:text-gray-800 dark:group-hover:text-white ${store === "fdroid" ? "w-[22px] h-[22px]" : "w-5 h-5"}`} 
+                />
+            </div>
+            <span className="text-left">
+                <div className="text-[11px] font-medium text-gray-500 dark:text-gray-400 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors">{label}</div>
+                <div className="text-[13px] font-semibold tracking-wide text-gray-900 dark:text-white/90 group-hover:text-gray-900 dark:group-hover:text-white transition-colors">{storeName}</div>
+            </span>
+        </a>
+    );
 });
 
 StoreButton.displayName = "StoreButton";

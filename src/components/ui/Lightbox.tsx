@@ -14,7 +14,7 @@ const Lightbox = ({ images }: LightboxProps) => {
 	const [isOpen, setIsOpen] = useState(false);
 	const [currentIndex, setCurrentIndex] = useState(0);
 	const [activeDevice, setActiveDevice] = useState<"iphone" | "ipad">("iphone");
-	const currentImages = images[activeDevice];
+	const currentImages = images["iphone"];
 
 	useEffect(() => {
 		window.openLightbox = (index: number, device: "iphone" | "ipad") => {

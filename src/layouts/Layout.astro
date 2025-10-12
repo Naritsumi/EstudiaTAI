@@ -19,14 +19,14 @@ const { title, description, showFooter = true } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content={Astro.generator}>
     
-    <link rel="icon" type="image/webp" href="/favicon-512.svg">
+    <link rel="icon" type="image/webp" href="/favicon-512.gif">
     
     <title>{title}</title>
     {description && <meta name="description" content={description}>}
     
     <meta property="og:title" content={title}>
     {description && <meta property="og:description" content={description}>}
-    <meta property="og:image" content={new URL('/favicon-512.svg', Astro.url).href}>
+    <meta property="og:image" content={new URL('/favicon-512.gif', Astro.url).href}>
     
     <script is:inline>
       const theme = localStorage.getItem('theme') || 'system';
@@ -44,7 +44,7 @@ const { title, description, showFooter = true } = Astro.props;
     </script>
   </head>
   <body class="transition-colors duration-300 bg-gray-50 text-gray-900 dark:bg-black dark:text-white">
-    <GithubCorner href="https://github.com/bohd4nx/mobile-landing" />
+    <GithubCorner href="https://github.com/Naritsumi/EstudiaTAI-app" />
     <div class="mx-auto min-h-screen max-w-[800px]">
       <PageAnimation client:load>
         <main><slot /></main>

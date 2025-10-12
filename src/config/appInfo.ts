@@ -1,14 +1,16 @@
 import type { StoreLinks } from "./types";
 
 export const appInfo = {
-	title: "Your App Name",
+	title: "EstudiaTAI",
 	description:
-		"Here you can write a brief description of your application. Tell users about its main features and benefits in 1-2 sentences.",
+		"Aplicación gratuita diseñada por TechRacoon para preparar la oposición de Técnico Auxiliar de Informática (AGE). \nIncluye tests organizados por temas para practicar de forma progresiva y adaptada a tu ritmo.",
 	logo: {
-		src: "favicon-512.svg",
+		src: "estudiaTAI.png",
 	},
 	storeLinks: {
-		apple: "#",
-		google: "#",
+		fdroid: "https://github.com/Naritsumi/EstudiaTAI-preview",
+		coffe: "https://buymeacoffee.com/tech_racoon",
+		kofi: "https://ko-fi.com/tech_racoon",
+		direct: "../../../public/releases/EstudiaTAI-v1.0.3.apk"
 	} as StoreLinks,
 };

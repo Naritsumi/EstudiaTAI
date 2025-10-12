@@ -6,8 +6,7 @@ type Theme = "light" | "dark" | "system";
 
 const themes: { key: Theme; icon: typeof FiSun; label: string }[] = [
     { key: "light", icon: FiSun, label: "Light" },
-    { key: "dark", icon: FiMoon, label: "Dark" },
-    { key: "system", icon: FiMonitor, label: "System" },
+    { key: "dark", icon: FiMoon, label: "Dark" }
 ];
 
 const ThemeToggle = () => {

@@ -1,20 +1,21 @@
-import { FiBox, FiStar, FiZap } from "react-icons/fi";
 import type { Feature } from "./types";
+import { BsBook, BsLightningCharge } from "react-icons/bs";
+import { PiExamLight } from "react-icons/pi";
 
 export const features: Feature[] = [
 	{
-		title: "Main Feature",
-		description: "Describe your main feature here. What makes it special?",
-		icon: FiStar,
+		title: "Temario actualizado",
+		description: "Accede al temario actualizado de la última convocatoria. ¡Añadiremos más en futuras actualizaciones!",
+		icon: PiExamLight,
 	},
 	{
-		title: "Another Feature",
-		description: "What else can your app do? Tell users about it here.",
-		icon: FiZap,
+		title: "Tests personalizados",
+		description: "Crea tests a medida seleccionando temas específicos, número de preguntas y dificultad.",
+		icon: BsLightningCharge,
 	},
 	{
-		title: "One More Feature",
-		description: "Add another key feature of your application here.",
-		icon: FiBox,
+		title: "Preguntas oficiales",
+		description: "Accede a preguntas inspiradas directamente de exámenes reales anteriores.",
+		icon: BsBook,
 	},
 ];

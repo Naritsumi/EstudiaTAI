@@ -20,7 +20,6 @@ const Screenshots = ({ images }: ScreenshotsProps) => {
 				<h2 className="text-2xl font-semibold text-gray-900 dark:text-white">
 					Screenshots
 				</h2>
-				<DeviceToggle activeDevice={activeDevice} onToggle={setActiveDevice} />
 			</div>
 			<div className={`relative overflow-hidden min-h-[${isIphone ? "400px" : "300px"}]`}>
 				<AnimatePresence mode="wait">
