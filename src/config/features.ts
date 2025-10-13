@@ -10,7 +10,7 @@ export const features: Feature[] = [
 	},
 	{
 		title: "Tests personalizados",
-		description: "Crea tests a medida seleccionando temas específicos, número de preguntas y dificultad.",
+		description: "Incluye tests organizados por temas para practicar de forma progresiva y adaptada a tu ritmo.",
 		icon: BsLightningCharge,
 	},
 	{
