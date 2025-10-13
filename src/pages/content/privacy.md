@@ -1,57 +1,40 @@
-# Privacy Policy
+# Política de Privacidad
 
-**Last updated:** February 1, 2025
+**Última actualización:** Octubre de 2025
 
-## Data Collection
+## Introducción
 
-We collect:
+EstudiaTAI es una aplicación educativa gratuita destinada a ayudar a los usuarios en la preparación de la oposición de Técnico Auxiliar de Informática (AGE).
+El diseño de la aplicación se ha realizado con un enfoque de privacidad por defecto y mínima recopilación de datos, priorizando la protección de la información del usuario.
 
-- Anonymous usage metrics
-- App performance data
-- Device information
-- Error reports
+El uso de EstudiaTAI no requiere registro, inicio de sesión, conexión permanente a Internet ni acceso a datos personales del dispositivo.
+El objetivo principal del Desarrollador es ofrecer una herramienta educativa útil y segura, sin fines comerciales ni publicitarios.
 
-## Data Usage
+## Información que se recopila
 
-We use collected data to:
+La aplicación no recopila, almacena, transmite ni comparte ningún tipo de información personal o técnica del usuario. Toda la información necesaria para el funcionamiento de la aplicación se encuentra almacenada localmente en el dispositivo y se elimina automáticamente al desinstalarla.
 
-- Improve app performance
-- Fix technical issues
-- Enhance features
-- Optimize experience
+## Permisos del dispositivo
 
-## Security Measures
+EstudiaTAI no solicita permisos especiales del sistema operativo.
+No accede a la cámara, micrófono, almacenamiento externo, ubicación, ni a ningún servicio de terceros.
+El uso de la aplicación se limita a la ejecución de su contenido educativo y no requiere autorización adicional.
 
-We protect your data with:
+## Uso de servicios de terceros
 
-- Encryption protocols
-- Regular security checks
-- Secure storage systems
+La aplicación no utiliza herramientas analíticas, redes publicitarias, servicios de seguimiento ni bibliotecas que recopilen información personal o de uso.
+Tampoco emplea servicios en la nube, bases de datos externas, ni realiza llamadas a servidores externos durante su funcionamiento normal.
 
-## Data Sharing Policy
+## Derechos del usuario
 
-We do not sell your data. We share data only:
+El usuario mantiene el control total sobre su dispositivo y los datos que este contenga.
+Al no existir tratamiento de información personal, no es necesario ejercer derechos como acceso, rectificación, supresión, oposición o portabilidad.
+Sin embargo, si el usuario considera que la aplicación pudiera no cumplir con la presente política, puede contactar con el Desarrollador para solicitar aclaraciones o eliminar cualquier posible información residual.
 
-- With essential services
-- When legally required
-- When you request it
-
-## User Rights
-
-You can:
-
-- View your data
-- Delete your data
-- Stop analytics
-- Download your data
-
-## Policy Updates
-
-We will notify you of policy changes through our app or email.
-
-## Contact
+## Contacto
 
 Questions? Reach us at:
 
-- privacy@example.com
-- help.example.com
+techracoon.group@gmail.com
+
+Repositorio oficial: https://github.com/Naritsumi/EstudiaTAI-app

@@ -2,7 +2,6 @@ import type { IconType } from "react-icons";
 
 export interface DeviceScreenshots {
 	iphone: string[];
-	ipad: string[];
 }
 
 export interface Feature {
@@ -17,13 +16,16 @@ export interface FAQ {
 }
 
 export interface StoreLinks {
-	apple: string;
-	google: string;
+	fdroid: string;
+	coffe: string;
+	kofi: string;
+	direct: string;
+
 }
 
 export interface SocialLink {
 	url: string;
-	icon: IconType;
+	icon: IconType | string;
 	label: string;
 }
 
@@ -59,7 +61,7 @@ export interface WithItems<T> {
 }
 
 export interface StoreButtonProps {
-	store: "apple" | "google";
+	store: "fdroid" | "coffe" | "kofi" | "direct";
 	href: string;
 	label: string;
 	storeName: string;
