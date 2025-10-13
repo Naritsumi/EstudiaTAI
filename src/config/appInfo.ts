@@ -8,7 +8,7 @@ export const appInfo = {
 		src: "estudiaTAI.png",
 	},
 	storeLinks: {
-		fdroid: "https://github.com/Naritsumi/EstudiaTAI-preview",
+		fdroid: "https://github.com/Naritsumi/EstudiaTAI-app/releases",
 		coffe: "https://buymeacoffee.com/tech_racoon",
 		kofi: "https://ko-fi.com/tech_racoon",
 		direct: "/releases/EstudiaTAI-v1.0.4.apk"
