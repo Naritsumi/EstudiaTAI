@@ -11,6 +11,6 @@ export const appInfo = {
 		fdroid: "https://github.com/Naritsumi/EstudiaTAI-preview",
 		coffe: "https://buymeacoffee.com/tech_racoon",
 		kofi: "https://ko-fi.com/tech_racoon",
-		direct: "../../../public/releases/EstudiaTAI-v1.0.3.apk"
+		direct: "../../public/releases/EstudiaTAI-v1.0.3.apk"
 	} as StoreLinks,
 };
