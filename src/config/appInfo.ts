@@ -3,7 +3,7 @@ import type { StoreLinks } from "./types";
 export const appInfo = {
 	title: "EstudiaTAI",
 	description:
-		"Aplicación gratuita diseñada por TechRacoon para preparar la oposición de Técnico Auxiliar de Informática (AGE). \nIncluye tests organizados por temas para practicar de forma progresiva y adaptada a tu ritmo.",
+		"Aplicación gratuita diseñada por TechRacoon para preparar la oposición de Técnico Auxiliar de Informática (AGE).",
 	logo: {
 		src: "estudiaTAI.png",
 	},
