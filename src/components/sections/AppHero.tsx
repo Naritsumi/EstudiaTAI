@@ -24,7 +24,7 @@ const AppHero = ({ title, description, storeLinks, logo }: AppHeroProps) => (
 				
 				<StoreButton store="coffe" href={storeLinks.coffe} label="Invítanos a" storeName=" Un café!" />
 				<StoreButton store="kofi" href={storeLinks.kofi} label="Apóyanos en" storeName=" Ko-fi" />
-				<StoreButton store="fdroid" href={storeLinks.fdroid} label="Descargala en " storeName="F-droid" />
+				<StoreButton store="fdroid" href={storeLinks.fdroid} label="Descárgala en " storeName="F-droid" />
                 <StoreButton store="direct" href={storeLinks.direct} label="Descarga " storeName="Directa" />
 			</div>
 		</div>
