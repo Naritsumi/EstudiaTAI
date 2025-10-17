@@ -11,9 +11,10 @@ import { siteConfig } from "../config";
 const { title, description, screenshots, features, faqs, storeLinks, logo, reviews } = siteConfig;
 ---
 
+
 <Layout title={title} description={description}>
   <main class="min-h-screen max-w-5xl mx-auto px-4 py-8">
-    <AppHero {title} {description} {storeLinks} {logo} />
+    <AppHero {title} {description} {storeLinks} {logo} client:load/>
     <div class="mb-16"><Screenshots images={screenshots} client:load /></div>
     <Features items={features} />
     <!--<Reviews items={reviews} client:visible />-->
