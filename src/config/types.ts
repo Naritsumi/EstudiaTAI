@@ -62,7 +62,7 @@ export interface WithItems<T> {
 }
 
 export interface StoreButtonProps {
-	store: "fdroid" | "coffe" | "kofi" | "direct";
+	store: "fdroid" | "coffe" | "kofi" | "direct" | "desktop";
 	href: string;
 	label: string;
 	storeName: string;

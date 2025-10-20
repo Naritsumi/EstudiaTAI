@@ -3,7 +3,7 @@ import { memo } from "react";
 import fdroidIcon from '../../../public/icons/fdroid.webp';
 import coffeeIcon from '../../../public/icons/coffee-logo.webp';
 import kofiIcon from '../../../public/icons/kofi-logo.webp';
-import iosIcon from '../../../public/icons/favicon-192.svg'
+import desktopIcon from '../../../public/icons/laptop-solid-full.svg'
 import faDownload from '../../../public/icons/flecha-hacia-abajo.png'
 
 const AppHero = ({ title, description, storeLinks, logo }: AppHeroProps) => (
@@ -26,15 +26,14 @@ const AppHero = ({ title, description, storeLinks, logo }: AppHeroProps) => (
                 <StoreButton store="kofi" href={storeLinks.kofi} label="Apóyanos en" storeName=" Ko-fi" />
                 {/*<StoreButton store="fdroid" href={storeLinks.fdroid} label="Pronto en " storeName="F-droid" />*/}
                 <StoreButton store="direct" href={storeLinks.direct} label="Descarga " storeName="Directa" />
-                <StoreButton store="ios" href={storeLinks.ios} label="Instalar en " storeName="iOS" />
-
+                <StoreButton store="desktop" href={storeLinks.ios} label="Instalar en " storeName="Escritorio" />
             </div>
         </div>
     </div>
 );
 
 const StoreButton = memo(({ store, href, label, storeName }) => {
-    const iconSrc = store === "fdroid" ? fdroidIcon : store === "coffe" ? coffeeIcon : store === "kofi" ? kofiIcon : store === "direct" ? faDownload : iosIcon;
+    const iconSrc = store === "fdroid" ? fdroidIcon : store === "coffe" ? coffeeIcon : store === "kofi" ? kofiIcon : store === "direct" ? faDownload : desktopIcon;
 
     const handleClick = async (e) => {
         if (store === "direct") {

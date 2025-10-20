@@ -12,6 +12,6 @@ export const appInfo = {
 		coffe: "https://buymeacoffee.com/tech_racoon",
 		kofi: "https://ko-fi.com/tech_racoon",
 		direct: "/releases/EstudiaTAI-v1.0.5.apk",
-		ios: "/ios"
+		ios: "/desktop"
 	} as StoreLinks,
 };

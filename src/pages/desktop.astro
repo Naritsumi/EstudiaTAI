@@ -5,13 +5,13 @@ import Layout from "@layouts/Layout.astro";
 import { marked } from "marked";
 import { siteConfig } from "../config";
 
-const termsContent = Object.values(import.meta.glob("./content/ios.md", { eager: true }))[0] as { rawContent(): string };
+const termsContent = Object.values(import.meta.glob("./content/desktop.md", { eager: true }))[0] as { rawContent(): string };
 const htmlContent = marked(termsContent.rawContent());
 ---
 
 <Layout 
-  title={`${siteConfig.title} · Tutorial IOS`} 
-  description={`Tutorial sobre cómo usar la aplicación ${siteConfig.title} en dispositivos iOS - Guía completa para usuarios de MAC`}
+  title={`${siteConfig.title} · Tutorial Escritorio`} 
+  description={`Tutorial sobre cómo usar la aplicación ${siteConfig.title} en escritorio - Guía completa para usuarios de PC`}
 >
   <main class="min-h-screen max-w-3xl mx-auto px-4 py-8">
     <Breadcrumbs items={[{ label: "Terms of Service" }]} />
