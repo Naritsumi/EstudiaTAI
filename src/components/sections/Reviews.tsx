@@ -40,7 +40,7 @@ const Reviews = ({ items }: ReviewsProps) => (
 							<div className="font-medium text-gray-900 dark:text-white">
 								{review.author}
 							</div>
-							<RatingStars rating={review.rating} />
+							{/*<RatingStars rating={review.rating} />*/}
 						</div>
 					</div>
 					<p className="text-gray-600 dark:text-gray-400">{review.text}</p>
