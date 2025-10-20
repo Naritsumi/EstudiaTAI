@@ -20,6 +20,7 @@ export interface StoreLinks {
 	coffe: string;
 	kofi: string;
 	direct: string;
+	ios: string
 
 }
 
