@@ -36,7 +36,7 @@ export interface AppLogo {
 
 export interface Review {
 	author: string;
-	rating: number;
+	//rating: number;
 	text: string;
 	avatar?: string;
 }
