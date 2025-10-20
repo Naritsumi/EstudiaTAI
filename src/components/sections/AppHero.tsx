@@ -22,12 +22,11 @@ const AppHero = ({ title, description, storeLinks, logo }: AppHeroProps) => (
 
             <div className="flex flex-wrap gap-4 justify-center md:justify-start">
 
-                <StoreButton store="coffe" href={storeLinks.coffe} label="Invítanos a" storeName=" Un café!" />
+                <StoreButton store="coffe" href={storeLinks.coffe} label="Invítanos a" storeName=" un café" />
                 <StoreButton store="kofi" href={storeLinks.kofi} label="Apóyanos en" storeName=" Ko-fi" />
                 {/*<StoreButton store="fdroid" href={storeLinks.fdroid} label="Pronto en " storeName="F-droid" />*/}
                 <StoreButton store="direct" href={storeLinks.direct} label="Descarga " storeName="Directa" />
                 <StoreButton store="desktop" href={storeLinks.ios} label="Instalar en " storeName="Escritorio" />
-
             </div>
         </div>
     </div>
