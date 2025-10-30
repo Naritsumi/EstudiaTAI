@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="public/favicon-512.svg" alt="Mobile Landing Logo" width="120" height="120" style="border-radius: 24px;">
+  <img src="public/icons/ic_launcher.webp" alt="Mobile Landing Logo" width="120" height="120" style="border-radius: 24px;">
 
   <h1 style="margin-top: 24px;">🚀 Mobile App Landing Page</h1>
 
