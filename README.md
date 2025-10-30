@@ -1,7 +1,7 @@
 <div align="center">
   <img src="public/icons/ic_launcher.webp" alt="Mobile Landing Logo" width="120" height="120" style="border-radius: 24px;">
 
-  <h1 style="margin-top: 24px;">🚀 Mobile App Landing Page</h1>
+  <h1 style="margin-top: 24px;">🚀 EstudiaTAI Landing Page</h1>
 
   <p style="font-size: 18px; color: #666; margin-bottom: 24px;">
     <strong>The ultimate modern landing page template for mobile applications</strong>
